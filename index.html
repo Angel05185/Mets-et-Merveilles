@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mets et Merveilles - Traiteur en Vendée</title>
+  <style>
+    body { font-family: 'Georgia', serif; margin:0; padding:0; background:#fdfbf8; color:#3e3e3e; }
+    header { background:#d2b48c; padding:1rem; text-align:center; }
+    section { padding:1rem; }
+    .services, .gallery { display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; }
+    .service, .gallery img { flex:1 1 280px; max-width:300px; }
+    form { padding:1rem; background:#fff; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+    input, textarea, button { width:100%; padding:.5rem; margin-top:.5rem; }
+    footer { text-align:center; padding:1rem; background:#f2eee8; }
+    @media (max-width: 600px) {
+      header h1 { font-size:1.5rem; }
+      .services, .gallery { flex-direction:column; align-items:center; }
+      form { margin:auto; }
+    }
+  </style>
+</head>
+<body>
+  <header><h1>Mets & Merveilles</h1><p>Traiteur traditionnel en Vendée</p></header>
+  <section class="services">
+    <div class="service"><h3>Buffets</h3><p>Buffets froids et chauds.</p></div>
+    <div class="service"><h3>Événements privés</h3><p>Anniversaires, baptêmes…</p></div>
+    <div class="service"><h3>Séminaires</h3><p>Pour entreprises.</p></div>
+  </section>
+  <section class="gallery">
+    <img src="galerie1.jpg"><img src="galerie2.jpg"><img src="galerie3.jpg">
+    <img src="galerie4.jpg"><img src="galerie5.jpg"><img src="galerie6.jpg">
+  </section>
+  <section>
+    <form action="mailto:angelo.chepro@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Nom" placeholder="Nom" required>
+      <input type="email" name="Email" placeholder="Email" required>
+      <textarea name="Message" placeholder="Votre message"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+  <footer>© 2025 Mets & Merveilles – angelo.chepro@gmail.com | 07 78 56 32 49</footer>
+</body>
+</html>
